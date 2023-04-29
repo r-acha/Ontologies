@@ -1,15 +1,15 @@
-@prefix : <http://www.semanticweb.org/machy/ontologies/2023/3/untitled-ontology-4#> .
+@prefix : <https://w3id.org/def/wineOntology#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://www.semanticweb.org/machy/ontologies/2023/3/untitled-ontology-4#> .
+@base <https://w3id.org/def/wineOntology#> .
 
-<http://www.semanticweb.org/machy/ontologies/2023/3/untitled-ontology-4> rdf:type owl:Ontology ;
-                                                                          rdfs:authors """Ricardo Arcega Aperte
+<https://w3id.org/def/wineOntology> rdf:type owl:Ontology ;
+                                     rdfs:authors """Ricardo Arcega Aperte
 Roberto Acha Paz""" ;
-                                                                          rdfs:name "Mundo del vino - España" .
+                                     rdfs:name "Mundo del vino - España" .
 
 #################################################################
 #    Annotation properties
@@ -32,7 +32,7 @@ rdfs:sameAs rdf:type owl:AnnotationProperty ;
 #    Object Properties
 #################################################################
 
-###  http://www.semanticweb.org/machy/ontologies/2023/3/untitled-ontology-4#acidityOf
+###  https://w3id.org/def/wineOntology#acidityOf
 :acidityOf rdf:type owl:ObjectProperty ;
            rdfs:subPropertyOf owl:topObjectProperty ;
            owl:inverseOf :hasAcidity ;
@@ -40,14 +40,14 @@ rdfs:sameAs rdf:type owl:AnnotationProperty ;
            rdfs:range :Wine .
 
 
-###  http://www.semanticweb.org/machy/ontologies/2023/3/untitled-ontology-4#bodyOf
+###  https://w3id.org/def/wineOntology#bodyOf
 :bodyOf rdf:type owl:ObjectProperty ;
         owl:inverseOf :hasBody ;
         rdfs:domain :Body ;
         rdfs:range :Wine .
 
 
-###  http://www.semanticweb.org/machy/ontologies/2023/3/untitled-ontology-4#hasAcidity
+###  https://w3id.org/def/wineOntology#hasAcidity
 :hasAcidity rdf:type owl:ObjectProperty ,
                      owl:FunctionalProperty ;
             rdfs:domain :Wine ;
@@ -55,7 +55,7 @@ rdfs:sameAs rdf:type owl:AnnotationProperty ;
             rdfs:comment "Todo vino tiene una acided declarada" .
 
 
-###  http://www.semanticweb.org/machy/ontologies/2023/3/untitled-ontology-4#hasBody
+###  https://w3id.org/def/wineOntology#hasBody
 :hasBody rdf:type owl:ObjectProperty ,
                   owl:FunctionalProperty ;
          rdfs:domain :Wine ;
@@ -63,7 +63,7 @@ rdfs:sameAs rdf:type owl:AnnotationProperty ;
          rdfs:comment "Todo vino tiene un cuerpo declarado" .
 
 
-###  http://www.semanticweb.org/machy/ontologies/2023/3/untitled-ontology-4#hasMeasurements
+###  https://w3id.org/def/wineOntology#hasMeasurements
 :hasMeasurements rdf:type owl:ObjectProperty ;
                  owl:inverseOf :measurementsOf ;
                  rdf:type owl:FunctionalProperty ;
@@ -71,7 +71,7 @@ rdfs:sameAs rdf:type owl:AnnotationProperty ;
                  rdfs:range :Measurements .
 
 
-###  http://www.semanticweb.org/machy/ontologies/2023/3/untitled-ontology-4#hasRegion
+###  https://w3id.org/def/wineOntology#hasRegion
 :hasRegion rdf:type owl:ObjectProperty ;
            owl:inverseOf :regionOf ;
            rdf:type owl:FunctionalProperty ;
@@ -79,7 +79,7 @@ rdfs:sameAs rdf:type owl:AnnotationProperty ;
            rdfs:range :Region .
 
 
-###  http://www.semanticweb.org/machy/ontologies/2023/3/untitled-ontology-4#hasType
+###  https://w3id.org/def/wineOntology#hasType
 :hasType rdf:type owl:ObjectProperty ;
          owl:inverseOf :typeOf ;
          rdf:type owl:FunctionalProperty ;
@@ -87,7 +87,7 @@ rdfs:sameAs rdf:type owl:AnnotationProperty ;
          rdfs:range :Type .
 
 
-###  http://www.semanticweb.org/machy/ontologies/2023/3/untitled-ontology-4#hasWinery
+###  https://w3id.org/def/wineOntology#hasWinery
 :hasWinery rdf:type owl:ObjectProperty ;
            rdfs:subPropertyOf owl:topObjectProperty ;
            owl:inverseOf :wineryOf ;
@@ -96,25 +96,25 @@ rdfs:sameAs rdf:type owl:AnnotationProperty ;
            rdfs:range :Winery .
 
 
-###  http://www.semanticweb.org/machy/ontologies/2023/3/untitled-ontology-4#measurementsOf
+###  https://w3id.org/def/wineOntology#measurementsOf
 :measurementsOf rdf:type owl:ObjectProperty ;
                 rdfs:domain :Measurements ;
                 rdfs:range :Wine .
 
 
-###  http://www.semanticweb.org/machy/ontologies/2023/3/untitled-ontology-4#regionOf
+###  https://w3id.org/def/wineOntology#regionOf
 :regionOf rdf:type owl:ObjectProperty ;
           rdfs:domain :Region ;
           rdfs:range :Wine .
 
 
-###  http://www.semanticweb.org/machy/ontologies/2023/3/untitled-ontology-4#typeOf
+###  https://w3id.org/def/wineOntology#typeOf
 :typeOf rdf:type owl:ObjectProperty ;
         rdfs:domain :Type ;
         rdfs:range :Wine .
 
 
-###  http://www.semanticweb.org/machy/ontologies/2023/3/untitled-ontology-4#wineryOf
+###  https://w3id.org/def/wineOntology#wineryOf
 :wineryOf rdf:type owl:ObjectProperty ;
           rdfs:domain :Winery ;
           rdfs:range :Wine .
@@ -124,32 +124,32 @@ rdfs:sameAs rdf:type owl:AnnotationProperty ;
 #    Data properties
 #################################################################
 
-###  http://www.semanticweb.org/machy/ontologies/2023/3/untitled-ontology-4#hasAcidityValue
+###  https://w3id.org/def/wineOntology#hasAcidityValue
 :hasAcidityValue rdf:type owl:DatatypeProperty ;
                  rdfs:domain :Acidity ;
                  rdfs:range xsd:integer .
 
 
-###  http://www.semanticweb.org/machy/ontologies/2023/3/untitled-ontology-4#hasBodyValue
+###  https://w3id.org/def/wineOntology#hasBodyValue
 :hasBodyValue rdf:type owl:DatatypeProperty ;
               rdfs:domain :Body ;
               rdfs:range xsd:integer .
 
 
-###  http://www.semanticweb.org/machy/ontologies/2023/3/untitled-ontology-4#hasCapacity
+###  https://w3id.org/def/wineOntology#hasCapacity
 :hasCapacity rdf:type owl:DatatypeProperty ;
              rdfs:domain :Wine ;
              rdfs:range xsd:integer .
 
 
-###  http://www.semanticweb.org/machy/ontologies/2023/3/untitled-ontology-4#hasName
+###  https://w3id.org/def/wineOntology#hasName
 :hasName rdf:type owl:DatatypeProperty ,
                   owl:FunctionalProperty ;
          rdfs:domain :Wine ;
          rdfs:range xsd:string .
 
 
-###  http://www.semanticweb.org/machy/ontologies/2023/3/untitled-ontology-4#hasYear
+###  https://w3id.org/def/wineOntology#hasYear
 :hasYear rdf:type owl:DatatypeProperty ,
                   owl:FunctionalProperty ;
          rdfs:domain :Wine ;
@@ -160,7 +160,7 @@ rdfs:sameAs rdf:type owl:AnnotationProperty ;
 #    Classes
 #################################################################
 
-###  http://www.semanticweb.org/machy/ontologies/2023/3/untitled-ontology-4#Above_100
+###  https://w3id.org/def/wineOntology#Above_100
 :Above_100 rdf:type owl:Class ;
            owl:equivalentClass [ owl:intersectionOf ( :Price
                                                       [ rdf:type owl:Class ;
@@ -181,7 +181,7 @@ rdfs:sameAs rdf:type owl:AnnotationProperty ;
            rdfs:label "Above_100" .
 
 
-###  http://www.semanticweb.org/machy/ontologies/2023/3/untitled-ontology-4#Acid
+###  https://w3id.org/def/wineOntology#Acid
 :Acid rdf:type owl:Class ;
       owl:equivalentClass [ owl:intersectionOf ( :Wine
                                                  [ rdf:type owl:Class ;
@@ -195,21 +195,21 @@ rdfs:sameAs rdf:type owl:AnnotationProperty ;
       rdfs:label "Acid" .
 
 
-###  http://www.semanticweb.org/machy/ontologies/2023/3/untitled-ontology-4#Acidity
+###  https://w3id.org/def/wineOntology#Acidity
 :Acidity rdf:type owl:Class ;
          rdfs:subClassOf :Measurements ;
          rdfs:comment "Clase que modela la acidez del vino" ;
          rdfs:label "Acidity" .
 
 
-###  http://www.semanticweb.org/machy/ontologies/2023/3/untitled-ontology-4#Body
+###  https://w3id.org/def/wineOntology#Body
 :Body rdf:type owl:Class ;
       rdfs:subClassOf :Measurements ;
       rdfs:comment "Clase que engloba los diferentes niveles del cuerpo del vino" ;
       rdfs:label "Body" .
 
 
-###  http://www.semanticweb.org/machy/ontologies/2023/3/untitled-ontology-4#Eol_than_15
+###  https://w3id.org/def/wineOntology#Eol_than_15
 :Eol_than_15 rdf:type owl:Class ;
              owl:equivalentClass [ owl:intersectionOf ( :Price
                                                         [ rdf:type owl:Class ;
@@ -230,7 +230,7 @@ rdfs:sameAs rdf:type owl:AnnotationProperty ;
              rdfs:label "Eol_than_15" .
 
 
-###  http://www.semanticweb.org/machy/ontologies/2023/3/untitled-ontology-4#Heavy
+###  https://w3id.org/def/wineOntology#Heavy
 :Heavy rdf:type owl:Class ;
        owl:equivalentClass [ owl:intersectionOf ( :Body
                                                   [ rdf:type owl:Class ;
@@ -251,14 +251,14 @@ rdfs:sameAs rdf:type owl:AnnotationProperty ;
        rdfs:label "Heavy" .
 
 
-###  http://www.semanticweb.org/machy/ontologies/2023/3/untitled-ontology-4#High_acidity
+###  https://w3id.org/def/wineOntology#High_acidity
 :High_acidity rdf:type owl:Class ;
               rdfs:subClassOf :Acidity ;
               rdfs:comment "Subclase que enbloba los vinos más acidos" ;
               rdfs:label "High_acidity" .
 
 
-###  http://www.semanticweb.org/machy/ontologies/2023/3/untitled-ontology-4#Light
+###  https://w3id.org/def/wineOntology#Light
 :Light rdf:type owl:Class ;
        owl:equivalentClass [ owl:intersectionOf ( :Body
                                                   [ rdf:type owl:Class ;
@@ -279,13 +279,13 @@ rdfs:sameAs rdf:type owl:AnnotationProperty ;
        rdfs:label "Light" .
 
 
-###  http://www.semanticweb.org/machy/ontologies/2023/3/untitled-ontology-4#Measurements
+###  https://w3id.org/def/wineOntology#Measurements
 :Measurements rdf:type owl:Class ;
               rdfs:comment "Mediciones o valores asociados a caracteristicas del vino" ;
               rdfs:label "Measurements" .
 
 
-###  http://www.semanticweb.org/machy/ontologies/2023/3/untitled-ontology-4#Medium
+###  https://w3id.org/def/wineOntology#Medium
 :Medium rdf:type owl:Class ;
         owl:equivalentClass [ owl:intersectionOf ( :Body
                                                    [ rdf:type owl:Class ;
@@ -306,7 +306,7 @@ rdfs:sameAs rdf:type owl:AnnotationProperty ;
         rdfs:label "Medium" .
 
 
-###  http://www.semanticweb.org/machy/ontologies/2023/3/untitled-ontology-4#No_acid
+###  https://w3id.org/def/wineOntology#No_acid
 :No_acid rdf:type owl:Class ;
          owl:equivalentClass [ owl:intersectionOf ( :Wine
                                                     [ rdf:type owl:Class ;
@@ -320,7 +320,7 @@ rdfs:sameAs rdf:type owl:AnnotationProperty ;
          rdfs:label "No_acid" .
 
 
-###  http://www.semanticweb.org/machy/ontologies/2023/3/untitled-ontology-4#Normal
+###  https://w3id.org/def/wineOntology#Normal
 :Normal rdf:type owl:Class ;
         owl:equivalentClass [ owl:intersectionOf ( :Price
                                                    [ rdf:type owl:Class ;
@@ -341,60 +341,60 @@ rdfs:sameAs rdf:type owl:AnnotationProperty ;
         rdfs:label "Normal" .
 
 
-###  http://www.semanticweb.org/machy/ontologies/2023/3/untitled-ontology-4#Num_reviews
+###  https://w3id.org/def/wineOntology#Num_reviews
 :Num_reviews rdf:type owl:Class ;
              rdfs:subClassOf :Measurements ;
              rdfs:comment "Numero de reviews sobre el vino" ;
              rdfs:label "Num_reviews" .
 
 
-###  http://www.semanticweb.org/machy/ontologies/2023/3/untitled-ontology-4#Price
+###  https://w3id.org/def/wineOntology#Price
 :Price rdf:type owl:Class ;
        rdfs:subClassOf :Measurements ;
        rdfs:comment "Precio del vino" ;
        rdfs:label "Price" .
 
 
-###  http://www.semanticweb.org/machy/ontologies/2023/3/untitled-ontology-4#Rating
+###  https://w3id.org/def/wineOntology#Rating
 :Rating rdf:type owl:Class ;
         rdfs:subClassOf :Measurements ;
         rdfs:comment "Clase con las valoraciones del vino" ;
         rdfs:label "Rating" .
 
 
-###  http://www.semanticweb.org/machy/ontologies/2023/3/untitled-ontology-4#Red
+###  https://w3id.org/def/wineOntology#Red
 :Red rdf:type owl:Class ;
      rdfs:subClassOf :Type ;
      rdfs:comment "Vino Tinto" ;
      rdfs:label "Red" .
 
 
-###  http://www.semanticweb.org/machy/ontologies/2023/3/untitled-ontology-4#Region
+###  https://w3id.org/def/wineOntology#Region
 :Region rdf:type owl:Class ;
         rdfs:comment "Coresponden con las Denominaciones de origen españolas" ;
         rdfs:label "Region" .
 
 
-###  http://www.semanticweb.org/machy/ontologies/2023/3/untitled-ontology-4#TOP
+###  https://w3id.org/def/wineOntology#TOP
 :TOP rdf:type owl:Class ;
      rdfs:subClassOf :Rating ;
      rdfs:comment "Clase TOP vino mejor valorado" ;
      rdfs:label "TOP" .
 
 
-###  http://www.semanticweb.org/machy/ontologies/2023/3/untitled-ontology-4#Type
+###  https://w3id.org/def/wineOntology#Type
 :Type rdf:type owl:Class ;
       rdfs:comment "Tipos de vinos" ;
       rdfs:label "Type" .
 
 
-###  http://www.semanticweb.org/machy/ontologies/2023/3/untitled-ontology-4#Wine
+###  https://w3id.org/def/wineOntology#Wine
 :Wine rdf:type owl:Class ;
       rdfs:comment "Calse vino" ;
       rdfs:label "Wine" .
 
 
-###  http://www.semanticweb.org/machy/ontologies/2023/3/untitled-ontology-4#Winery
+###  https://w3id.org/def/wineOntology#Winery
 :Winery rdf:type owl:Class ;
         rdfs:comment "Bodega encargada de producir el vino" ;
         rdfs:label "Winery" .
@@ -404,77 +404,77 @@ rdfs:sameAs rdf:type owl:AnnotationProperty ;
 #    Individuals
 #################################################################
 
-###  http://www.semanticweb.org/machy/ontologies/2023/3/untitled-ontology-4#Acidity_1
+###  https://w3id.org/def/wineOntology#Acidity_1
 :Acidity_1 rdf:type owl:NamedIndividual ,
                     :Acidity .
 
 
-###  http://www.semanticweb.org/machy/ontologies/2023/3/untitled-ontology-4#Acidity_2
+###  https://w3id.org/def/wineOntology#Acidity_2
 :Acidity_2 rdf:type owl:NamedIndividual ,
                     :Acidity .
 
 
-###  http://www.semanticweb.org/machy/ontologies/2023/3/untitled-ontology-4#Acidity_3
+###  https://w3id.org/def/wineOntology#Acidity_3
 :Acidity_3 rdf:type owl:NamedIndividual ,
                     :Acidity .
 
 
-###  http://www.semanticweb.org/machy/ontologies/2023/3/untitled-ontology-4#Acidity_4
+###  https://w3id.org/def/wineOntology#Acidity_4
 :Acidity_4 rdf:type owl:NamedIndividual ,
                     :Acidity .
 
 
-###  http://www.semanticweb.org/machy/ontologies/2023/3/untitled-ontology-4#Acidity_5
+###  https://w3id.org/def/wineOntology#Acidity_5
 :Acidity_5 rdf:type owl:NamedIndividual ,
                     :Acidity .
 
 
-###  http://www.semanticweb.org/machy/ontologies/2023/3/untitled-ontology-4#Body_1
+###  https://w3id.org/def/wineOntology#Body_1
 :Body_1 rdf:type owl:NamedIndividual ,
                  :Body .
 
 
-###  http://www.semanticweb.org/machy/ontologies/2023/3/untitled-ontology-4#Body_2
+###  https://w3id.org/def/wineOntology#Body_2
 :Body_2 rdf:type owl:NamedIndividual ,
                  :Body .
 
 
-###  http://www.semanticweb.org/machy/ontologies/2023/3/untitled-ontology-4#Body_3
+###  https://w3id.org/def/wineOntology#Body_3
 :Body_3 rdf:type owl:NamedIndividual ,
                  :Body .
 
 
-###  http://www.semanticweb.org/machy/ontologies/2023/3/untitled-ontology-4#Body_4
+###  https://w3id.org/def/wineOntology#Body_4
 :Body_4 rdf:type owl:NamedIndividual ,
                  :Body .
 
 
-###  http://www.semanticweb.org/machy/ontologies/2023/3/untitled-ontology-4#Body_5
+###  https://w3id.org/def/wineOntology#Body_5
 :Body_5 rdf:type owl:NamedIndividual ,
                  :Body .
 
 
-###  http://www.semanticweb.org/machy/ontologies/2023/3/untitled-ontology-4#Region_1
+###  https://w3id.org/def/wineOntology#Region_1
 :Region_1 rdf:type owl:NamedIndividual ,
                    :Region ;
           :hasName "Rias Baixas" ;
           rdfs:sameAs "http://es.dbpedia.org/resource/R%C3%ADas_Baixas_(vino)"^^xsd:anyURI .
 
 
-###  http://www.semanticweb.org/machy/ontologies/2023/3/untitled-ontology-4#Region_2
+###  https://w3id.org/def/wineOntology#Region_2
 :Region_2 rdf:type owl:NamedIndividual ,
                    :Region ;
           :hasName "Ribera del Duero" ;
           rdfs:sameAs "http://es.dbpedia.org/resource/Ribera_del_Duero_(vino)"^^xsd:anyURI .
 
 
-###  http://www.semanticweb.org/machy/ontologies/2023/3/untitled-ontology-4#Region_3
+###  https://w3id.org/def/wineOntology#Region_3
 :Region_3 rdf:type owl:NamedIndividual ,
                    :Region ;
           rdfs:sameAs "http://es.dbpedia.org/resource/Bierzo_(vino)"^^xsd:anyURI .
 
 
-###  http://www.semanticweb.org/machy/ontologies/2023/3/untitled-ontology-4#Vino_1
+###  https://w3id.org/def/wineOntology#Vino_1
 :Vino_1 rdf:type owl:NamedIndividual ,
                  :Wine ;
         :hasAcidity :Acidity_1 ;
@@ -484,7 +484,7 @@ rdfs:sameAs rdf:type owl:AnnotationProperty ;
         :hasYear 2022 .
 
 
-###  http://www.semanticweb.org/machy/ontologies/2023/3/untitled-ontology-4#Vino_2
+###  https://w3id.org/def/wineOntology#Vino_2
 :Vino_2 rdf:type owl:NamedIndividual ,
                  :Wine ;
         :hasAcidity :Acidity_2 ;
@@ -494,7 +494,7 @@ rdfs:sameAs rdf:type owl:AnnotationProperty ;
         :hasYear 2022 .
 
 
-###  http://www.semanticweb.org/machy/ontologies/2023/3/untitled-ontology-4#Vino_3
+###  https://w3id.org/def/wineOntology#Vino_3
 :Vino_3 rdf:type owl:NamedIndividual ,
                  :Wine ;
         :hasAcidity :Acidity_3 ;
@@ -504,7 +504,7 @@ rdfs:sameAs rdf:type owl:AnnotationProperty ;
         :hasYear 2023 .
 
 
-###  http://www.semanticweb.org/machy/ontologies/2023/3/untitled-ontology-4#Vino_4
+###  https://w3id.org/def/wineOntology#Vino_4
 :Vino_4 rdf:type owl:NamedIndividual ,
                  :Wine ;
         :hasAcidity :Acidity_4 ;
@@ -514,7 +514,7 @@ rdfs:sameAs rdf:type owl:AnnotationProperty ;
         :hasYear 2023 .
 
 
-###  http://www.semanticweb.org/machy/ontologies/2023/3/untitled-ontology-4#Vino_5
+###  https://w3id.org/def/wineOntology#Vino_5
 :Vino_5 rdf:type owl:NamedIndividual ,
                  :Wine ;
         :hasAcidity :Acidity_5 ;
